@@ -46,6 +46,22 @@
       bottom: 0;
       width: 100%;
     }
+    .flags {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 20px;
+      align-items: center;
+    }
+    .flag-card {
+      text-align: center;
+      width: 200px;
+    }
+    .flag-card img {
+      width: 100%;
+      height: auto;
+      border: 1px solid #ccc;
+      border-radius: 4px;
+    }
   </style>
 </head>
 <body>
@@ -98,12 +114,24 @@
 
   <div class="section" id="members">
     <h2>Member Nations</h2>
-    <ul>
-      <li>🇷🇺 <strong>Rummlandia</strong></li>
-      <li>🇵🇱 <strong>Podland</strong></li>
-      <li>🇺🇸 <strong>NYF (New York Federation)</strong></li>
-      <li>🇷🇴 <strong>New Roman Union</strong></li>
-    </ul>
+    <div class="flags">
+      <div class="flag-card">
+        <img src="/mnt/data/Flag_of_Rummlandia.png" alt="Flag of Rummlandia">
+        <p><strong>Rummlandia</strong></p>
+      </div>
+      <div class="flag-card">
+        <img src="/mnt/data/New_York_Federation.webp" alt="Flag of NYF">
+        <p><strong>New York Federation (NYF)</strong></p>
+      </div>
+      <div class="flag-card">
+        <img src="/mnt/data/bild.png" alt="Flag of New Roman Union">
+        <p><strong>New Roman Union</strong></p>
+      </div>
+      <div class="flag-card">
+        <img src="/mnt/data/125px-Flag_of_Podland.png" alt="Flag of Podland">
+        <p><strong>Podland</strong></p>
+      </div>
+    </div>
   </div>
 
   <div class="section" id="contact">
